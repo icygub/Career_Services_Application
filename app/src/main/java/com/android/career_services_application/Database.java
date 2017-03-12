@@ -17,6 +17,7 @@ public class Database extends AppCompatActivity {
             addJobsToDB(jobsDB);
         } catch (Exception e) {
             e.printStackTrace();
+            //ignore this comment. testing pull request.
         }
     }
 
