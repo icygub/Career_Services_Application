@@ -19,6 +19,7 @@ public class Database extends AppCompatActivity {
             e.printStackTrace();
             //ignore this comment. testing pull request.
             //ignore this comment again.
+            //ok, this is the last pull request test.
         }
     }
 
