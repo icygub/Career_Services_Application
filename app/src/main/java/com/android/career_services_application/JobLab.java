@@ -27,7 +27,6 @@ public class JobLab {
         for (int i = 0; i < 100; i++) {
             Job job = new Job();
             job.setTitle("Job #" + i);
-            job.setSolved(i % 2 == 0);
             mJobs.add(job);
         }
     }

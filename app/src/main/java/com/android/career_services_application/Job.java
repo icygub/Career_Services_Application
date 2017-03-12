@@ -12,7 +12,6 @@ public class Job {
     private UUID mId;
     private String mTitle;
     private Date mDate;
-    private boolean mSolved;
 
     public Job() {
         mId = UUID.randomUUID();
@@ -39,11 +38,4 @@ public class Job {
         this.mDate = mDate;
     }
 
-    public boolean isSolved() {
-        return mSolved;
-    }
-
-    public void setSolved(boolean solved) {
-        mSolved = solved;
-    }
 }
