@@ -9,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,8 +50,8 @@ public class JobListFragment extends Fragment{
     }
 
     private void updateUI() {
-        JobLab jobLab = JobLab.get(getActivity());
-        List<Job> jobs = jobLab.getJobs();
+        JobList jobList = JobList.get(getActivity());
+        List<Job> jobs = jobList.getJobs();
         JobAdapter mAdapter = new JobAdapter(jobs);
         mJobRecyclerView.setAdapter(mAdapter);
     }

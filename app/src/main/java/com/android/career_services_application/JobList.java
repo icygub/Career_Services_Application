@@ -8,21 +8,22 @@ import java.util.UUID;
 
 /**
  * Created by icyhot on 25/02/2017.
+ * This class will eventually be substituted by the Database class.
  */
 
-public class JobLab {
+public class JobList {
 
-    private static JobLab sJobLab;
+    private static JobList sJobList;
     private List<Job> mJobs;
 
-    public static JobLab get(Context context) {
-        if (sJobLab == null) {
-            sJobLab = new JobLab(context);
+    public static JobList get(Context context) {
+        if (sJobList == null) {
+            sJobList = new JobList(context);
         }
-        return sJobLab;
+        return sJobList;
     }
 
-    private JobLab(Context context) {
+    private JobList(Context context) {
         mJobs = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             Job job = new Job();
