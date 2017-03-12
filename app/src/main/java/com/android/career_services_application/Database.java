@@ -18,6 +18,7 @@ public class Database extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
             //ignore this comment. testing pull request.
+            //ignore this comment again.
         }
     }
 
