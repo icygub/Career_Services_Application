@@ -12,3 +12,11 @@ Test it to make sure it works.
 Clone.
 
 All done!
+
+-------------------------
+
+If you want to contribute to and create a new feature for the project: 
+
+Click on the "Fork" button at the top right. This will saved a copy of the project to your GitHub. 
+
+When you believe your branch is ready to be integrated into the app, submit a pull request. 
