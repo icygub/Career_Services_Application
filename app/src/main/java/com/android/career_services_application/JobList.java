@@ -28,6 +28,9 @@ public class JobList {
         for (int i = 0; i < 100; i++) {
             Job job = new Job();
             job.setTitle("Job #" + i);
+            job.setCompany("Company");
+            job.setLocation("City and State");
+            job.setDescription("This will contain a one-sentence description of the job");
             mJobs.add(job);
         }
     }

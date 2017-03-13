@@ -60,7 +60,9 @@ public class JobListFragment extends Fragment{
 
         private Job mJob;
         private TextView mTitleTextView;
-        private TextView 
+        private TextView mCompanyTextView;
+        private TextView mLocationTextView;
+        private TextView mDescriptionTextView;
         private TextView mDateTextView;
 
         public JobHolder(LayoutInflater inflater, ViewGroup parent) {
@@ -68,13 +70,19 @@ public class JobListFragment extends Fragment{
             itemView.setOnClickListener(this);
 
             mTitleTextView = (TextView) itemView.findViewById(R.id.job_title);
-            mDateTextView = (TextView) itemView.findViewById(R.id.job_date);
+            mCompanyTextView = (TextView) itemView.findViewById(R.id.job_company);
+            mLocationTextView = (TextView) itemView.findViewById(R.id.job_location);
+            mDescriptionTextView = (TextView) itemView.findViewById(R.id.job_description);
+            //mDateTextView = (TextView) itemView.findViewById(R.id.job_date);
         }
 
         public void bind(Job job) {
             mJob = job;
             mTitleTextView.setText(mJob.getTitle());
-            mDateTextView.setText(mJob.getDate().toString());
+            mCompanyTextView.setText(mJob.getCompany());
+            mLocationTextView.setText(mJob.getLocation());
+            mDescriptionTextView.setText(mJob.getDescription());
+            //mDateTextView.setText(mJob.getDate().toString());
         }
 
         @Override
