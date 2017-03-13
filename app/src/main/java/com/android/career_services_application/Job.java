@@ -11,6 +11,9 @@ public class Job {
 
     private UUID mId;
     private String mTitle;
+    private String mCompany;
+    private String mLocation;
+    private String mDescription;
     private Date mDate;
 
     public Job() {
@@ -29,6 +32,32 @@ public class Job {
     public void setTitle(String title) {
         this.mTitle = title;
     }
+
+    public void setCompany(String company) {
+        this.mCompany = company;
+    }
+
+    public String getCompany() {
+        return mCompany;
+    }
+
+    public String getDescription() {
+        return mDescription;
+    }
+
+    public void setDescription(String description) {
+        this.mDescription = description;
+    }
+
+    public String getLocation() {
+        return mLocation;
+    }
+
+    public void setLocation(String location) {
+        this.mLocation = location;
+    }
+
+
 
     public Date getDate() {
         return mDate;

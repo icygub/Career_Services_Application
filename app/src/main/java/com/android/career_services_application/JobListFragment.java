@@ -60,6 +60,7 @@ public class JobListFragment extends Fragment{
 
         private Job mJob;
         private TextView mTitleTextView;
+        private TextView 
         private TextView mDateTextView;
 
         public JobHolder(LayoutInflater inflater, ViewGroup parent) {
